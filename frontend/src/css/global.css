@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoSlab-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("../fonts/Pretendard-Regular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("../fonts/RobotoSlab-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("../fonts/Pretendard-Bold.otf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto";
+    src: url("../fonts/NotoSansKR-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto";
+    src: url("../fonts/NotoSansKR-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto";
+    src: url("../fonts/NotoSansKR-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    min-width: 1000px;
+}
+
+/* 영어용 폰트 */
+:lang(en) {
+    font-family: "Roboto", sans-serif;
+}
+
+/* 한글용 폰트 */
+:lang(ko) {
+    font-family: "Pretendard", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.2em;
+    height: 0.2em;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    outline: "1px solid slategray";
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,299 @@
+.music-separation-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 90vh;
+    width: 100vw;
+    transition: opacity 1.5s ease, transform 1s ease;
+    opacity: 1; /* 초기 투명도 설정 */
+    transform: translateY(0);
+    margin-top: 10vh;
+}
+
+.music-separation-main-container.hidden {
+    opacity: 0;
+}
+
+.music-separation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.equalizer {
+    margin-top: 5px;
+    display: flex; /* 수평으로 나열하기 위한 flexbox 사용 */
+    justify-content: space-around; /* 중앙 정렬 */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.equalizer-slider-container {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.1);
+}
+
+.equalizer-slider {
+    width: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 35vh;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    writing-mode: bt-lr; /* 슬라이더를 수직으로 만들기 */
+    -webkit-writing-mode: vertical-lr;
+    margin: 5%;
+}
+
+.equalizer-slider:hover {
+    opacity: 1;
+}
+
+.equalizer-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4caf50;
+    cursor: pointer;
+}
+
+.audio-controls-container {
+    display: flex;
+    justify-content: start; /* 왼쪽과 오른쪽 요소 사이에 공간을 만듭니다. */
+    align-items: flex-start; /* 요소들이 상단에서 정렬되도록 합니다. */
+}
+
+.music-separation-volume-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 320px;
+    margin-right: 1vw;
+}
+
+.track {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.volume-label {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 3vw;
+    margin-right: 10px;
+}
+
+.volume-slider {
+    width: 10vw;
+}
+
+.volume-size {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1vw;
+    width: 2vw;
+}
+
+.volume-text {
+    margin-left: 20px;
+    font-size: 20px;
+    width: 60px;
+    color: #eeeeee;
+}
+
+.separate-waveform-container {
+    color: #fff;
+    width: 55%; /* 필요에 따라 조절 */
+    margin-right: 1vw;
+}
+
+.selecet-boxs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5%;
+    width: 20%;
+    height: 320px;
+}
+
+.selecet-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.check-select-singer {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    font-size: 2vw;
+}
+
+.check-selected-singer {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    font-size: 24px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-button-container {
+    position: relative; /* New container for the button and modal */
+    display: flex;
+    flex-direction: row;
+}
+
+.conversion-button {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.separation-play-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.separation-play-button:hover {
+    cursor: pointer;
+}
+
+.separation-rewind-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.separation-rewind-button:hover {
+    cursor: pointer;
+}
+
+.separation-save-button {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.separation-save-button {
+    cursor: pointer;
+}
+
+.audio-controls-container .el-slider__button {
+    width: 7px; /* 새 마크 이미지에 맞는 너비 */
+    height: 25px; /* 새 마크 이미지에 맞는 높이 */
+    border-radius: 30%; /* 원형으로 만들기 위해 */
+    background-color: rgb(64, 158, 255);
+    border: #000000;
+    color: #000000;
+}
+
+.audio-controls-container .el-slider__bar {
+    background: rgb(106, 180, 255);
+    display: flex;
+    align-items: center; /* 세로축 기준으로 중앙 정렬 */
+}
+
+.audio-controls-container .el-slider__runway-container {
+    display: flex;
+    align-items: center; /* 세로축 기준으로 중앙 정렬 */
+}
+
+.audio-controls-container .el-slider__runway {
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.1); /* 주변 그림자 효과를 부드럽게 */
+    background: #999999;
+}
+
+.equalizer .el-slider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.equalizer .el-slider__button {
+    width: 15px; /* 새 마크 이미지에 맞는 너비 */
+    height: 20px; /* 새 마크 이미지에 맞는 높이 */
+    border-radius: 2px; /* 원형으로 만들기 위해 */
+    background-color: #c2c2c2;
+    border: #000000;
+    color: #000000;
+}
+
+.equalizer .el-slider__bar {
+    background: linear-gradient(to top, #ffffffbf, #130202);
+    display: flex;
+    align-items: center; /* 세로축 기준으로 중앙 정렬 */
+}
+
+.equalizer .el-slider__runway-container {
+    display: flex;
+    align-items: center; /* 세로축 기준으로 중앙 정렬 */
+}
+
+.equalizer .el-slider__runway {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.1); /* 주변 그림자 효과를 부드럽게 */
+}
+
+.equalizer .el-slider__stop {
+    height: 1.5px;
+    border-radius: 0;
+    background-color: #888888;
+}
+
+.separation-result-step .el-tour__content {
+    width: 230px;
+}
+
+.separation-result-step .el-tour__title {
+    font-weight: bold;
+}
